@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Giới thiệu về AI</title>
+		<title>Giới thiệu về Trí tuệ Nhân tạo (AI)</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -10,11 +10,59 @@
 			#three {
 				display: none;
 			}
-			.logo {
-				font-size: 1.1rem;
-				font-weight: bold;
+			/* Thêm phần định dạng cho hiệu ứng chữ gõ */
+			.typewriter h1 {
+				font-size: 3rem;
 				color: white;
-				margin-bottom: 20px;
+				overflow: hidden;
+				border-right: .15em solid #fff;
+				width: 0;
+				white-space: nowrap;
+				margin: 0 auto;
+				animation: typing 3.5s steps(40) 1s 1 normal both, blinkCaret .75s step-end infinite;
+			}
+
+			@keyframes typing {
+				from {
+					width: 0;
+				}
+				to {
+					width: 100%;
+				}
+			}
+
+			@keyframes blinkCaret {
+				from, to {
+					border-color: transparent;
+				}
+				50% {
+					border-color: white;
+				}
+			}
+
+			/* Phần hiển thị nút CTA */
+			.actions .button {
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 10px 0;
+				cursor: pointer;
+				border-radius: 4px;
+			}
+			.actions .button:hover {
+				background-color: #45a049;
+			}
+
+			/* Background Image */
+			#intro {
+				background-image: url('images/ai_background.jpg'); /* Thay đường dẫn đến ảnh nền của bạn */
+				background-size: cover;
+				background-position: center;
 			}
 		</style>
 	</head>
@@ -41,11 +89,12 @@
 
 			<!-- Intro -->
 			<section id="intro" class="wrapper style1 fullscreen fade-up">
-				<div class="inner">
-					<h1>Giới thiệu về Trí tuệ Nhân tạo (AI)</h1>
-					<p>Khám phá công nghệ đang thay đổi thế giới: từ trợ lý ảo đến xe tự lái, AI đang hiện diện khắp nơi trong cuộc sống hiện đại.</p>
+				<div class="inner typewriter">
+					<h1>Trí Tuệ Nhân Tạo (AI)</h1>
+					<p>AI – công nghệ đang cách mạng hóa mọi lĩnh vực: từ giáo dục, y tế đến công nghiệp và đời sống hằng ngày.</p>
+					<p>Khám phá cách mà máy móc có thể "học", "suy nghĩ" và hỗ trợ con người trong thời đại 4.0.</p>
 					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Tìm hiểu thêm</a></li>
+						<li><a href="#one" class="button scrolly">Tìm hiểu về AI</a></li>
 					</ul>
 				</div>
 			</section>
